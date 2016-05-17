@@ -1,0 +1,83 @@
+<section>
+	<div class="col-md-12 page-title">
+		<h1><cms:editable name='short_title' group='form' order='1' type='text'/></h1>
+		<blockquote>
+			<cms:editable name='long_title' group='form' order='2' type='text'/>
+			<br/>
+			<cms:editable name='instructions' group='form' order='3' type='text'/>				
+		</blockquote>
+	</div>
+
+	<div class="col-md-12">
+		<div class="row">
+			
+			<div class="form col-md-6 col-sm-6 col-xs-12">
+				 <form id="ajax-contact" method="post" action="mymail.php">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="<cms:editable name='name' group='placeholders' order='1' type='text'/>" id="name" name="name">
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="<cms:editable name='email' group='placeholders' order='2' type='text'/>" id="email" name="email">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="<cms:editable name='subject' group='placeholders' order='3' type='text'/>" id="subject" name="subject">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control form-textarea" rows="5" placeholder="<cms:editable name='message' group='placeholders' order='4' type='text'/>" name="message" id="message"></textarea>
+					</div>
+
+					<div class="col-md-6 col-sm-12 col-xs-12 row">
+						<input type="submit" id="submit" class="btn-send" value="<cms:editable name='button_value' group='form' order='4' type='text'/>" name="submit">
+					</div>
+					
+					<div class="col-md-6 col-sm-12 col-xs-12 row">
+						<div id="form-messages"></div>
+					</div>
+				 </form>
+
+			</div>
+
+			<div class="form col-md-6 col-sm-6 col-xs-12 contact-info">
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-4"><strong>Email:</strong></div>
+					<div class="col-md-7 col-sm-9 col-xs-8"><cms:get_custom_field 'email_one' masterpage='globals.php' /></div>				
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-4"><strong>Skype:</strong></div>
+					<div class="col-md-7 col-sm-9 col-xs-8"><cms:get_custom_field 'skype' masterpage='globals.php' /></div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-3"><strong>Social:</strong></div>
+					<div class="col-md-7 col-sm-9 col-xs-7">
+						<div class="contact-social">
+							<div class="social">
+								<div class="freelance-ico">
+									<a href="<cms:get_custom_field 'link_fbook' masterpage='globals.php' />"target="_blank"><i class="fa fa-facebook"></i></a>
+								</div>
+								<div class="freelance-ico">
+									<a href="<cms:get_custom_field 'link_lnkdin' masterpage='globals.php' />" target="_blank"><i class="fa fa-linkedin"></i></a>
+								</div>
+								<div class="freelance-ico">
+									<a href="<cms:get_custom_field 'link_gplus' masterpage='globals.php' />" target="_blank"><i class="fa fa-google-plus"></i></a>
+								</div>
+								<div class="freelance-ico">
+									<a href="<cms:get_custom_field 'link_upwork' masterpage='globals.php' />" target="_blank" title="upWork"><i class="fa fa-desktop"></i></a>
+								</div>
+							</div>
+						</div>													
+					</div>								
+				</div>
+				<div class="row">
+					<div class="col-md-11 col-md-offset-1 col-sm-12 col-xs-12 hidden-xs">
+						<div id="gmap"></div>
+					</div>
+				</div>						
+
+
+			</div>
+			
+		</div>
+	</div>
+</section>

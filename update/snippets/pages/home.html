@@ -1,0 +1,158 @@
+<div class="row">
+
+<!-- Profile Picture -->
+<div class="col-md-6 col-sm-12 col-xs-12 col-md-push-6">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="row">
+			<div class="jamiereid">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="270" height="270" class="embed-responsive-item" src="<cms:editable name='youtube_link' type='text'>https://www.youtube.com/embed/vqcAoZqg9d0</cms:editable>?rel=0&showinfo=0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tags -->
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="row">
+			<div class="freelancer-info">
+
+				<!-- Tags on main page -->
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='1' name='id1' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='2' name='id2' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='3' name='id3' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='4' name='id4' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='5' name='id5' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id6' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id7' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id8' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id9' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id10' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id11' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id12' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id13' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id14' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id15' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id16' type='text'/></h4>
+				</div>
+
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='6' name='id17' type='text'/></h4>
+				</div>
+				
+				<div class="tagCloud">
+					<h4><cms:editable group='tagCloud' order='18' name='id18' type='text'/></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Persinal information -->
+<div class="col-md-6 col-sm-12 col-xs-12 col-md-pull-6">
+	<!-- about -->
+	<div class="col-md-12">
+		<div class="row">
+			<div class="freelancer-info">
+				<h1 class="brandColor">Jamie Reid</h1>
+				<h2 class="brandSecColor"><strong><cms:get_custom_field 'jobtitle' masterpage='globals.php' /></strong></h2>
+				<p><strong><cms:editable name='simpleabout_title' type='text'>Freelance Full Stack Developer Based in Warrington, United Kingdom.</cms:editable></strong><br/>
+
+				   <cms:editable name='simpleabout_text' type='text'>I have a degree in Computer Science B.Sc from University of Manchester, one of the top of my class in all of the programming courses (Java, C, C++, C with OpenGL)</cms:editable></p>
+				<div class="social">
+					<div class="freelance-ico">
+						<a href="<cms:get_custom_field 'link_fbook' masterpage='globals.php' />" target="_blank"><i class="fa fa-facebook"></i></a>
+					</div>
+					<div class="freelance-ico">
+						<a href="<cms:get_custom_field 'link_lnkdin' masterpage='globals.php' />" target="_blank"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<div class="freelance-ico">
+						<a href="<cms:get_custom_field 'link_gplus' masterpage='globals.php' />" target="_blank"><i class="fa fa-google-plus"></i></a>
+					</div>
+					<div class="freelance-ico">
+						<a href="<cms:get_custom_field 'link_upwork' masterpage='globals.php' />" target="_blank" title="upWork"><i class="fa fa-desktop"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- personal details -->
+	<div class="col-md-12">
+		<div class="row">
+			<div class="freelance-webdesigner">
+				<h3>Personal Information</h3>
+
+				<div class="col-md-12 col-sm-12 row personal-info">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-4">Name:</div>
+						<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'name' masterpage='globals.php' /></div>								
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-4">Occupation:</div>
+						<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'jobtitle' masterpage='globals.php' /></div>								
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-4">Email <sup>(1)</sup> :</div>
+						<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'email_one' masterpage='globals.php' /></div>								
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-4">Email <sup>(2)</sup> :</div>
+						<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'email_two' masterpage='globals.php' /></div>								
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-4">Skype:</div>
+						<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'skype' masterpage='globals.php' /></div>								
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>

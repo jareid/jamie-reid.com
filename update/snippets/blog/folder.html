@@ -1,0 +1,32 @@
+<section>
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="col-md-3 col-sm-3 col-xs-12 col-md-push-9">
+			<div class="row">
+				<div class="blog-sidebar">
+					<img class="center-block" src="https://placeholdit.imgix.net/~text?txtsize=22&bg=f0f0f0&txtclr=333333%26text%3Dsidebar&txt=Sidebar&w=205&h=300" width="100%" style="max-width: 300px;" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-9 col-sm-9 col-xs-12 col-md-pull-3">
+			<div class="col-md-12">
+				<div class="row">
+					<cms:pages folder=k_folder_name limit='5' paginate='1' >
+						<cms:if blog_picture_thumbnail ><div class="blog-thumbnail"><a href="<cms:show k_page_link />"<cms:if blog_picture_caption > title="<cms:show blog_picture_caption />"</cms:if>><img src="<cms:show blog_picture_thumbnail />"<cms:if blog_picture_caption > alt="<cms:show blog_picture_caption />"</cms:if>><span class="blog-folder"><cms:show k_page_foldertitle /></span></a></div></cms:if>
+						<div class="blog-summary<cms:if blog_picture_thumbnail ><cms:else/>-full</cms:if>">
+							<h3><a href="<cms:show k_page_link />" class="blog-title"><cms:show k_page_title /></a></h3>
+							<p><cms:show blog_summary /></p>
+							<h6 class="blog-date"><cms:date k_page_date format='F j, Y' /><cms:if k_comments_count > - <cms:show k_comments_count /> Comment<cms:if k_comments_count = '1' ><cms:else/>s</cms:if></cms:if><cms:if k_page_foldertitle > - <a href="<cms:show k_page_folderlink />"><cms:show k_page_foldertitle /></a></cms:if></h6>
+						</div>
+						<div class="<cms:if k_paginated_bottom ><cms:else/>grid-</cms:if>clear"></div>
+						<cms:if k_paginator_required && k_paginated_bottom >
+							<div id="paginate"><cms:if k_paginate_link_prev ><a href="<cms:show k_paginate_link_prev />" title="Previous Page">Prev</a></cms:if>
+							<cms:repeat startcount='1' count=k_total_pages ><a href="<cms:show k_page_being_paginated /><cms:if k_count='1' ><cms:else/>?pg=<cms:show k_count /></cms:if>"<cms:if k_count = k_current_page > id="page-current"</cms:if>><cms:show k_count /></a></cms:repeat>
+							<cms:if k_paginate_link_next ><a href="<cms:show k_paginate_link_next />" title="Next Page">Next</a></cms:if></div>
+						</cms:if>
+					</cms:pages>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

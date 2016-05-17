@@ -1,0 +1,41 @@
+<section>
+	<div class=col-md-12 page-title>
+		<h1> Blog </h1>									
+		<blockquote>
+			<cms:show k_page_title /> <br/>
+			<cms:if k_page_foldertitle > - <a href=<cms:show k_page_folderlink />><cms:show k_page_foldertitle /></a></cms:if></span> <cms:date k_page_date format='F j, Y' />					
+		</blockquote>
+	</div>
+	
+	<div class=col-md-12 col-sm-12 col-xs-12>
+	
+		<cms:if blog_picture >
+		<div class=col-md-12 col-sm-12 col-xs-12>
+			<div class=row>
+				<div id=blog-picture>
+					<img src=<cms:show blog_picture /><cms:if blog_picture_caption > alt=<cms:show blog_picture_caption /> title=<cms:show blog_picture_caption /></cms:if>>
+					<cms:if blog_picture_caption ><h6 id=caption><cms:show blog_picture_caption /></h6></cms:if>
+				</div>
+			</div>
+		</div>
+		</cms:if>
+		
+		<div class=col-md-3 col-sm-3 col-xs-12 col-md-push-9>
+			<div class=row>
+				<div class=blog-sidebar>
+					<img class=center-block src=https://placeholdit.imgix.net/~text?txtsize=22&bg=f0f0f0&txtclr=333333%26text%3Dsidebar&txt=Sidebar&w=205&h=300 width=100% style=max-width: 300px; />
+				</div>
+			</div>
+		</div>
+		
+		<div class=col-md-9 col-sm-9 col-xs-12 col-md-pull-3>
+			<div class=col-md-12>
+				<div class=row>
+					<div class=blog-post>
+						<cms:show blog_content />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

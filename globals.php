@@ -1,12 +1,7 @@
 <?php require_once( 'update/cms.php' ); ?>
 <cms:template title='Global Settings' executable='0' order='7' >
-
-	<!-- Globals Data -->
-	<cms:editable name='group_seo' 						label='Search Engine Optimization' 	    type='group'       group="main" 		order='1' />
-	<cms:editable name='group_miscellaneous' 			label='Miscellaneous' 				    type='group' 	   group="main" 		order='2' />
-	
 	<!-- Global Blog -->
-	<cms:editable name='group_seo' 						label='Search Engine Optimization' 	    type='text'        group="blog"         order='1' />
+	<cms:editable name='blogname' 						label='Blog Name' 	                    type='text'        group="blog"         order='1' />
 	
 	<!-- Global Data -->
 	<cms:editable name='fullname' 						label='Full Name' 					    type='text'        group='group_data'   order='1' />
@@ -37,7 +32,8 @@
 	
 	<!-- Global Miscellaneous -->	
 	<cms:editable name='maxyears' 						label='Maximum Year' 					type='text'      group='group_misc'     order='1' />
-	<cms:editable name='cache_css' 						label='CSS Cache Buster'  				type='text'      group='group_misc'     order='1' desc='Force browsers to request updated files'  validator='alpha_num'/>
+	<cms:editable name='copyright' 						label='Copyright Notice' 				type='text'      group='group_misc'     order='2' />
+	<cms:editable name='cache_css' 						label='CSS Cache Buster'  				type='text'      group='group_misc'     order='3' desc='Force browsers to request updated files'  validator='alpha_num'/>
 	
 	
 	<!-- Global Names & Links of Pages -->	

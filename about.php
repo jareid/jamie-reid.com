@@ -57,8 +57,8 @@
 										</div>
 
 										<div class="col-xs-12 col-sm-12 col-md-9">
-											<h1 class="brandColor"><cms:set name=site name 'global'/></h1>
-											<h2><strong><cms:set jobtitle=site name 'global'/></strong></h2>
+											<h1 class="brandColor"><cms:get_custom_field 'name' masterpage='globals.php' /></h1>
+											<h2><strong><cms:get_custom_field 'jobtitle' masterpage='globals.php' /></strong></h2>
 											<p><strong><cms:editable name='about1_title' type='text'>Freelance Backend Developer Based in Warrington, United Kingdom.</cms:editable></strong><br/>
 											   <cms:editable name='about1' type='text'>I have a degree in Computer Science B.Sc from University of Manchester, one of the top of my class in all of the programming courses (Java, C, C++, C with OpenGL)</cms:editable></p>
 
@@ -92,7 +92,7 @@
 											<strong><cms:editable order='1' group='skills_one' name='name' type='text'/> :</strong>
 											<div class="progress">
 											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-											  aria-valuemin="0" aria-valuemax="<cms:set skills_max_years=site name 'global'/>" style="width:<cms:editable order='3' group='skills_one' name='percent' type='text'/>%">
+											  aria-valuemin="0" aria-valuemax="<cms:get_custom_field 'skills_max_years' masterpage='globals.php' />" style="width:<cms:editable order='3' group='skills_one' name='percent' type='text'/>%">
 											  	<div class="expYears"><cms:editable order='2' group='skills_one' name='years' type='text'/></div>  
 											  	</div>
 											</div>
@@ -100,7 +100,7 @@
 											<strong><cms:editable order='1' group='skills_two' name='name' type='text'/> :</strong>
 											<div class="progress">
 											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-											  aria-valuemin="0" aria-valuemax="<cms:set skills_max_years=site name 'global'/>" style="width:<cms:editable order='3' group='skills_two' name='percent' type='text'/>%">
+											  aria-valuemin="0" aria-valuemax="<cms:get_custom_field 'skills_max_years' masterpage='globals.php' />" style="width:<cms:editable order='3' group='skills_two' name='percent' type='text'/>%">
 											  	<div class="expYears"><cms:editable order='2' group='skills_two' name='years' type='text'/></div>  
 											  	</div>
 											</div>
@@ -108,7 +108,7 @@
 											<strong><cms:editable name='skill_3_name' type='text'>SQL</cms:editable> :</strong>
 											<div class="progress">
 											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-											  aria-valuemin="0" aria-valuemax="<cms:set skills_max_years=site name 'global'/>" style="width:<cms:editable name='skill_3_percent' type='text'>80</cms:editable>%">
+											  aria-valuemin="0" aria-valuemax="<cms:get_custom_field 'skills_max_years' masterpage='globals.php' />" style="width:<cms:editable name='skill_3_percent' type='text'>80</cms:editable>%">
 											  	<div class="expYears"><cms:editable name='skill_3_years' type='text'>8 Years</cms:editable></div>  
 											  	</div>
 											</div>
@@ -116,7 +116,7 @@
 											<strong><cms:editable order='1' group='skills_four' name='name' type='text'/> :</strong>
 											<div class="progress">
 											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-											  aria-valuemin="0" aria-valuemax="<cms:set skills_max_years=site name 'global'/>" style="width:<cms:editable order='3' group='skills_four' name='percent' type='text'/>%">
+											  aria-valuemin="0" aria-valuemax="<cms:get_custom_field 'skills_max_years' masterpage='globals.php' />" style="width:<cms:editable order='3' group='skills_four' name='percent' type='text'/>%">
 											  	<div class="expYears"><cms:editable order='2' group='skills_four' name='years' type='text'/></div>  
 											  	</div>
 											</div>
@@ -124,7 +124,7 @@
 											<strong><cms:editable order='1' group='skills_five' name='name' type='text'/> :</strong>
 											<div class="progress">
 											  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-											  aria-valuemin="0" aria-valuemax="<cms:set skills_max_years=site name 'global'/>" style="width:<cms:editable order='3' group='skills_five' name='percent' type='text'/>%">
+											  aria-valuemin="0" aria-valuemax="<cms:get_custom_field 'skills_max_years' masterpage='globals.php' />" style="width:<cms:editable order='3' group='skills_five' name='percent' type='text'/>%">
 											  	<div class="expYears"><cms:editable order='2' group='skills_five' name='years' type='text'/></div>  
 											  	</div>
 											</div>

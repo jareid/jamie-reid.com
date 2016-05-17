@@ -83,11 +83,11 @@
 										<div class="form col-md-6 col-sm-6 col-xs-12 contact-info">
 											<div class="row">
 												<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-4"><strong>Email:</strong></div>
-												<div class="col-md-7 col-sm-9 col-xs-8"><cms:set email_one=site name 'global'/></cms:editable></div>				
+												<div class="col-md-7 col-sm-9 col-xs-8"><cms:get_custom_field 'email_one' masterpage='globals.php' /></cms:editable></div>				
 											</div>
 											<div class="row">
 												<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-4"><strong>Skype:</strong></div>
-												<div class="col-md-7 col-sm-9 col-xs-8"><cms:set skype=site name 'global'/></div>
+												<div class="col-md-7 col-sm-9 col-xs-8"><cms:get_custom_field 'skype' masterpage='globals.php' /></div>
 											</div>
 											<div class="row">
 												<div class="col-md-3 col-md-offset-1 col-sm-3 col-xs-3"><strong>Social:</strong></div>
@@ -95,16 +95,16 @@
 													<div class="contact-social">
 														<div class="social">
 															<div class="freelance-ico">
-																<a href="<cms:set link_fbook=site name 'global'/>"target="_blank"><i class="fa fa-facebook"></i></a>
+																<a href="<cms:get_custom_field 'link_fbook' masterpage='globals.php' />"target="_blank"><i class="fa fa-facebook"></i></a>
 															</div>
 															<div class="freelance-ico">
-																<a href="<cms:set link_lnkdin=site name 'global'/>" target="_blank"><i class="fa fa-linkedin"></i></a>
+																<a href="<cms:get_custom_field 'link_lnkdin' masterpage='globals.php' />" target="_blank"><i class="fa fa-linkedin"></i></a>
 															</div>
 															<div class="freelance-ico">
-																<a href="<cms:set link_gplus=site name 'global'/>" target="_blank"><i class="fa fa-google-plus"></i></a>
+																<a href="<cms:get_custom_field 'link_gplus' masterpage='globals.php' />" target="_blank"><i class="fa fa-google-plus"></i></a>
 															</div>
 															<div class="freelance-ico">
-																<a href="<cms:set link_upwork=site name 'global'/>" target="_blank" title="upWork"><i class="fa fa-desktop"></i></a>
+																<a href="<cms:get_custom_field 'link_upwork' masterpage='globals.php' />" target="_blank" title="upWork"><i class="fa fa-desktop"></i></a>
 															</div>
 														</div>
 												   	</div>													

@@ -2,18 +2,19 @@
 	<div class="container">
 		<div class="row"
 			<div class="col-md-5 col-sm-5">
-				<p><strong><cms:set copyright=site name 'global'/></strong></p>							
+				<p><strong><cms:get_custom_field 'copyright' masterpage='globals.php' /></strong></p>							
 			</div>
 			<div class="col-md-7  col-sm-7 hidden-xs">
 				<ul class="footer-nav">
-					<li><a href="<cms:set home_link=site name 'global'/>"><cms:set home_name=site name 'global'/></a></li>
-					<li><a href="<cms:set about_link=site name 'global'/>"><cms:set about_name=site name 'global'/></a></li>
-					<li><a href="<cms:set services_link=site name 'global'/>"><cms:set services_name=site name 'global'/></a></li>
-					<li><a href="<cms:set testimonials_link=site name 'global'/>"><cms:set testimonials_name=site name 'global'/></a></li>
-					<li><a href="<cms:set blog_link=site name 'global'/>"><cms:set blog_name=site name 'global'/></a></li>
-					<li><a href="<cms:set contact_link=site name 'global'/>"><cms:set contact_name=site name 'global'/></a></li>
+					<li><a href="<cms:get_custom_field 'home_link' masterpage='globals.php' />"><cms:get_custom_field 'home_name' masterpage='globals.php' /></a></li>
+					<li><a href="<cms:get_custom_field 'about_link' masterpage='globals.php' />"><cms:get_custom_field 'about_name' masterpage='globals.php' /></a></li>
+					<li><a href="<cms:get_custom_field 'services_link' masterpage='globals.php' />"><cms:get_custom_field 'services_name' masterpage='globals.php' /></a></li>
+					<li><a href="<cms:get_custom_field 'testimonials_link' masterpage='globals.php' />"><cms:get_custom_field 'testimonials_name' masterpage='globals.php' /></a></li>
+					<li><a href="<cms:get_custom_field 'blog_link' masterpage='globals.php' />"><cms:get_custom_field 'blog_name' masterpage='globals.php' /></a></li>
+					<li><a href="<cms:get_custom_field 'contact_link' masterpage='globals.php' />"><cms:get_custom_field 'contact_name' masterpage='globals.php' /></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </footer>
+

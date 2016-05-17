@@ -141,22 +141,22 @@
 									<div class="row">
 										<div class="freelancer-info">
 											<h1 class="brandColor">Jamie Reid</h1>
-											<h2 class="brandSecColor"><strong><cms:set jobtitle=site name 'global'/></strong></h2>
+											<h2 class="brandSecColor"><strong><cms:get_custom_field 'jobtitle' masterpage='globals.php' /></strong></h2>
 											<p><strong><cms:editable name='simpleabout_title' type='text'>Freelance Full Stack Developer Based in Warrington, United Kingdom.</cms:editable></strong><br/>
 
 											   <cms:editable name='simpleabout_text' type='text'>I have a degree in Computer Science B.Sc from University of Manchester, one of the top of my class in all of the programming courses (Java, C, C++, C with OpenGL)</cms:editable></p>
 										   	<div class="social">
 												<div class="freelance-ico">
-													<a href="<cms:set link_fbook=site name 'global'/>" target="_blank"><i class="fa fa-facebook"></i></a>
+													<a href="<cms:get_custom_field 'link_fbook' masterpage='globals.php' />" target="_blank"><i class="fa fa-facebook"></i></a>
 												</div>
 												<div class="freelance-ico">
-													<a href="<cms:set link_lnkdin=site name 'global'/>" target="_blank"><i class="fa fa-linkedin"></i></a>
+													<a href="<cms:get_custom_field 'link_lnkdin' masterpage='globals.php' />" target="_blank"><i class="fa fa-linkedin"></i></a>
 												</div>
 												<div class="freelance-ico">
-													<a href="<cms:set link_gplus=site name 'global'/>" target="_blank"><i class="fa fa-google-plus"></i></a>
+													<a href="<cms:get_custom_field 'link_gplus' masterpage='globals.php' />" target="_blank"><i class="fa fa-google-plus"></i></a>
 												</div>
 												<div class="freelance-ico">
-													<a href="<cms:set link_upwork=site name 'global'/>" target="_blank" title="upWork"><i class="fa fa-desktop"></i></a>
+													<a href="<cms:get_custom_field 'link_upwork' masterpage='globals.php' />" target="_blank" title="upWork"><i class="fa fa-desktop"></i></a>
 												</div>
 										   	</div>
 										</div>
@@ -171,23 +171,23 @@
 											<div class="col-md-12 col-sm-12 row personal-info">
 												<div class="row">
 													<div class="col-md-3 col-sm-3 col-xs-4">Name:</div>
-													<div class="col-md-9 col-sm-9 col-xs-8"><cms:set name=site name 'global'/></div>								
+													<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'name' masterpage='globals.php' /></div>								
 												</div>
 												<div class="row">
 													<div class="col-md-3 col-sm-3 col-xs-4">Occupation:</div>
-													<div class="col-md-9 col-sm-9 col-xs-8"><cms:set jobtitle=site name 'global'/></div>								
+													<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'jobtitle' masterpage='globals.php' /></div>								
 												</div>
 												<div class="row">
 													<div class="col-md-3 col-sm-3 col-xs-4">Email <sup>(1)</sup> :</div>
-													<div class="col-md-9 col-sm-9 col-xs-8"><cms:set email_one=site name 'global'/></div>								
+													<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'email_one' masterpage='globals.php' /></div>								
 												</div>
 												<div class="row">
 													<div class="col-md-3 col-sm-3 col-xs-4">Email <sup>(2)</sup> :</div>
-													<div class="col-md-9 col-sm-9 col-xs-8"><cms:set email_two=site name 'global'/></div>								
+													<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'email_two' masterpage='globals.php' /></div>								
 												</div>
 												<div class="row">
 													<div class="col-md-3 col-sm-3 col-xs-4">Skype:</div>
-													<div class="col-md-9 col-sm-9 col-xs-8"><cms:set skype=site name 'global'/></div>								
+													<div class="col-md-9 col-sm-9 col-xs-8"><cms:get_custom_field 'skype' masterpage='globals.php' /></div>								
 												</div>
 											</div>
 										</div>

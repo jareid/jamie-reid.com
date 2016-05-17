@@ -1,0 +1,64 @@
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><cms:set name_and_job=site name 'global'/></title>
+
+	<!-- site seo -->
+	<link rel="author" href="<cms:set name_and_job=site name 'global'/>" />
+	<cms:if >class="active"</cms:if>><a href="<cms:set home_link=site name 'global'/>"><cms:set home_name=site name 'global'/></a></li>
+	<cms:if >class="active"</cms:if>><a href="<cms:set about_link=site name 'global'/>"><cms:set about_name=site name 'global'/></a></li>
+	<li <cms:if >class="active"</cms:if>><a href="<cms:set services_link=site name 'global'/>"><cms:set services_name=site name 'global'/></a></li>
+	<li <cms:if '>class="active"</cms:if>><a href="<cms:set testimonials_link=site name 'global'/>"><cms:set testimonials_name=site name 'global'/></a></li>
+	<li <cms:if >class="active"</cms:if>><a href="<cms:set blog_link=site name 'global'/>"><cms:set blog_name=site name 'global'/></a></li>
+	<li <cms:if k_template_name=='Contact'>class="active"</cms:if>><a href="<cms:set contact_link=site name 'global'/>"><cms:set contact_name=site name 'global'/></a></li>
+	
+	<cms:if k_template_name=='Home' >
+		<meta name="description" content="<cms:set meta_description_home=site name 'global'/>" />
+		<meta name="keywords" itemprop="<cms:set keywords_home=site name 'global'/>" />
+	<cms:else />
+		<cms:if k_template_name=='About' >
+			<meta name="description" content="<cms:set meta_description_about=site name 'global'/>" />
+			<meta name="keywords" itemprop="<cms:set keywords_about=site name 'global'/>" />
+		<cms:else />
+			<cms:if k_template_name=='Services' >
+				<meta name="description" content="<cms:set meta_description_services=site name 'global'/>" />
+				<meta name="keywords" itemprop="<cms:set keywords_services=site name 'global'/>" />
+			<cms:else />
+				<cms:if k_template_name=='Testimonials' >
+					<meta name="description" content="<cms:set meta_description_testimonials=site name 'global'/>" />
+					<meta name="keywords" itemprop="<cms:set keywords_testimonials=site name 'global'/>" />
+				<cms:else />
+					<cms:if k_template_name=='Blog' >
+						<meta name="description" content="<cms:set meta_description_blog=site name 'global'/>" />
+						<meta name="keywords" itemprop="<cms:set keywords_blog=site name 'global'/>" />
+					<cms:else />
+						<cms:if k_template_name=='Contact' >
+							<meta name="description" content="<cms:set meta_description_contact=site name 'global'/>" />
+							<meta name="keywords" itemprop="<cms:set keywords_contact=site name 'global'/>" />
+						<cms:else />
+							<meta name="description" content="<cms:set meta_description_404=site name 'global'/>" />
+							<meta name="keywords" itemprop="<cms:set keywords_404=site name 'global'/>" />
+						</cms:if>
+					</cms:if>
+				</cms:if>
+			</cms:if>
+		</cms:if>
+	</cms:if>
+	
+	<meta name="description" content="" />
+	<meta name="keywords" itemprop="" />
+
+	<!-- font -->
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap Css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->   

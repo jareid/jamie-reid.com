@@ -9,8 +9,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <cms:embed 'head.html' />
+<head>	
+	<!-- JQuery Js -->
+	<script type="script/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Bootstrap Js -->
+	<script type="script/javascript" src="js/bootstrap.min.js"></script>
+    
+    <cms:embed 'head.html' />
 </head>
 	<body>
 	<?php include_once("analyticstracking.php") ?>

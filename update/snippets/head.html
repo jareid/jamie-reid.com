@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- Page Title -->
-	<cms:if k_template_name=='Blog' >
+	<cms:if k_template_name='Blog' >
 		<cms:if k_is_page >
 			<title><cms:get_custom_field 'blogname' masterpage='globals.php' /> - <cms:show k_page_title /></title>
 		<cms:else />
@@ -21,34 +21,39 @@
 
 	<!-- Site SEO -->
 	<link rel="author" href="<cms:get_custom_field 'link_gplus' masterpage='globals.php' />" />	
-	<cms:if k_template_name=='Home' >
+	<cms:if k_template_name='index.php' >
 		<meta name="description" content="<cms:get_custom_field 'meta_description_home' masterpage='globals.php' />" />
 		<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_home' masterpage='globals.php' />" 
 	<cms:else />
-		<cms:if k_template_name=='About' >
+		<cms:if k_template_name='about.php' >
 			<meta name="description" content="<cms:get_custom_field 'meta_description_about' masterpage='globals.php' />" />
 			<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_about' masterpage='globals.php' />" />
 		<cms:else />
-			<cms:if k_template_name=='Services' >
+			<cms:if k_template_name='services.php' >
 				<meta name="description" content="<cms:get_custom_field 'meta_description_services' masterpage='globals.php' />" />
 				<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_services' masterpage='globals.php' />" />
 			<cms:else />
-				<cms:if k_template_name=='Testimonials' >
+				<cms:if k_template_name='testimonial.php' >
 					<meta name="description" content="<cms:get_custom_field 'meta_description_testimonials' masterpage='globals.php' />" />
 					<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_testimonials' masterpage='globals.php' />" />
 				<cms:else />
-					<cms:if k_template_name=='Blog' >
+					<cms:if k_template_name='blog.php' >
 						<meta name="description" content="<cms:get_custom_field 'meta_description_blog' masterpage='globals.php' />" />
 						<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_blog' masterpage='globals.php' />" />
 						<link href="<cms:show k_site_link />screen.css?v=<cms:get_custom_field 'cache_css' masterpage='globals.php' />" rel="stylesheet" type="text/css" media="screen,projection">
 						<link rel="alternate" type="application/rss+xml" title="Blog - RSS" href="<cms:link 'rss.php' />" >
 					<cms:else />
-						<cms:if k_template_name=='Contact' >
+						<cms:if k_template_name='contact.php' >
 							<meta name="description" content="<cms:get_custom_field 'meta_description_contact' masterpage='globals.php' />" />
 							<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_contact' masterpage='globals.php' />" />
 						<cms:else />
-							<meta name="description" content="<cms:get_custom_field 'meta_description_404' masterpage='globals.php' />" />
-							<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_404' masterpage='globals.php' />" />
+							<cms:if k_template_name='404.php' >
+								<meta name="description" content="<cms:get_custom_field 'meta_description_contact' masterpage='globals.php' />" />
+								<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_contact' masterpage='globals.php' />" />
+							<cms:else />
+								<meta name="description" content="<cms:get_custom_field 'meta_description_404' masterpage='globals.php' />" />
+								<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_404' masterpage='globals.php' />" />
+							</cms:if>
 						</cms:if>
 					</cms:if>
 				</cms:if>
@@ -71,12 +76,6 @@
       <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
     <![endif]-->   
 	
-	<!-- JQuery Js -->
-	<script type="script/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	
-	<!-- Bootstrap Js -->
-	<script type="script/javascript" src="js/bootstrap.min.js"></script>
-	
 	<!-- Useful Page JS -->
 	<script>
 		<!-- Google Analytics JS Start -->
@@ -93,23 +92,7 @@
 			window.history.back();
 		}
 	</script>
-   
-   
-   	<cms:if k_template_name=='Home' >
-		<meta name="description" content="<cms:get_custom_field 'meta_description_home' masterpage='globals.php' />" />
-		<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_home' masterpage='globals.php' />" 
+	
 		
-		<!-- JS for the image slider on the Home Page -->
-		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">    
-		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-		<script type="text/javascript">        
-		  $(document).ready(function(){
-			$('.bxslider').bxSlider({   
-				minSlides: 3,
-				maxSlides: 3,
-				slideWidth: 250,
-				slideMargin: 10
-			});
-		  });
-		</script>
-	</cms:if>
+	
+	

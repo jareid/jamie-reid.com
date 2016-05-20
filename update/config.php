@@ -16,7 +16,7 @@
     // 1b.
     // For security purpose, the 'index.php' file of Couch can be renamed to anything else.
     // If you do so, uncomment the following line and enter the new name.
-    //define( 'K_ADMIN_PAGE', 'index.php' );
+    define( 'K_ADMIN_PAGE', 'index.php' );
 
     // 2.
     // Your Time Zone
@@ -145,7 +145,7 @@
     // Uncomment the following line if you wish to format self-closing HTML tags the old way e.g. as <br> instead of <br/>
     //define( 'K_HTML4_SELFCLOSING_TAGS', 1 );
 
-    // 24.
+    // 24.-
     // Set the following to '1' if you wish to extract EXIF data from images uploaded to Gallery
     define( 'K_EXTRACT_EXIF_DATA', 0 );
 
@@ -158,13 +158,6 @@
     // Set the following to '1' ONLY IF YOU HAVE BOUGHT A COMMERCIAL LICENSE for the site you are using this file on.
     // Doing so otherwise is NOT PERMITTED and will constitute a violation of the CPAL license this software is provided under.
     define( 'K_PAID_LICENSE', 0 );
-
-        // Rebranding. Uncomment the following defines and add your info.
-        // 99a. Company Logo on light background  (Max. 171 x 64 pixels. Needs to be placed within 'couch/theme/images/' folder)
-        //define( 'K_LOGO_LIGHT', 'couch.gif' );
-
-        // 99b. Company Logo on dark background  (Max. 171 x 64 pixels. Needs to be placed within 'couch/theme/images/' folder)
-        //define( 'K_LOGO_DARK', 'couch_dark.gif' );
-
-        // 99c. Footer content (Company name and link)
-        //define( 'K_ADMIN_FOOTER', '<a href="http://www.yourcompany.com">COMPANY NAME</a>' );
+    define( 'K_LOGO_LIGHT', 'logo.png' );
+    define( 'K_LOGO_DARK', 'logo_1.png' );
+    define( 'K_ADMIN_FOOTER', '<a href="http://www.jamie-reid.com">Jamie Reid Development</a>' );

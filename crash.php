@@ -15,7 +15,7 @@
 
                 <!-- Content section -->
                 <div class="container">
-                    <cms:embed 'pages/500.html' />
+                    <cms:embed 'pages/error.html' />
                 </div>
                 <!-- Content section ends -->
 

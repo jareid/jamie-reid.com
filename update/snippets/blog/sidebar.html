@@ -1,0 +1,32 @@
+<div class="col-md-12">
+	<div class="row">
+		<cms:folders masterpage='blog.php'>
+			<h4><cms:get_custom_field 'blog_categories' masterpage='globals.php' /></h4>
+			<ul class="blog-sidebar">
+				<li><a href="<cms:show k_folder_link />"><cms:show k_folder_title /></a></li>
+			<ul>
+		</cms:folders>
+	</div>
+</div>
+<cms:if k_is_page>
+	<br/>
+	<div class="col-md-12">
+		<div class="row">
+			<h4><cms:get_custom_field 'blog_latest' masterpage='globals.php' /><</h4>
+			<ul class="blog-sidebar">
+				<li><a href="<cms:show k_page_link />"><cms:show k_page_title /></a></li>
+			<ul>
+		</div>
+	</div>
+</cms:if>
+<br/>
+<div class="col-md-12">
+	<div class="row">
+		<cms:archives masterpage='blog.php'>
+			<h4><cms:get_custom_field 'blog_archives' masterpage='globals.php' /><</h4>
+			<ul class="blog-sidebar">
+				<li><a href="<cms:show k_archive_link />"><cms:show k_archive_date format='F Y' /></a></li>
+			<ul>
+		</cms:archives>
+	</div>
+</div>

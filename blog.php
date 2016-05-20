@@ -16,24 +16,14 @@
 	<?php include_once("analyticstracking.php") ?>
 		<!-- main Wrapper start-->
 			<div class="container-fluid">
-				<div class="rWow">
+				<div class="row">
 					<!-- Navbar -->
                     <cms:embed 'addons/navbar.html' />                    
 					<!-- Navbar ends -->
 
 					<!-- Profile section -->
 					<div class="container">
-                    <cms:if k_is_page >
-                        <cms:embed 'blog/page.html' />
-                    <cms:else />
-                        <cms:if k_is_folder >
-                            <cms:embed 'blog/folder.html' />
-                        </cms:if>
-                        <cms:if k_is_home >
-                            <cms:embed 'blog/home.html' />
-                        </cms:if>
-                    </cms:if>
-                            
+                        <cms:embed 'blog/blog.html' />    
 					</div>
 					<!-- profile section ends -->
 

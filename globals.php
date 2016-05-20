@@ -2,6 +2,9 @@
 <cms:template title='Global Settings' executable='0' order='7' >
 	<!-- Global Blog -->
 	<cms:editable name='blogname' 						label='Blog Name' 	                    type='text'        group="blog"         order='1' />
+	<cms:editable name='blog_categories' 				label='Blog Categories' 	                    type='text'        group="blog"         order='2' />
+	<cms:editable name='blog_latest' 					label='Blog Latest' 	                    type='text'        group="blog"         order='3' />
+	<cms:editable name='blog_arhives' 					label='Blog Archives' 	                    type='text'        group="blog"         order='4' />
 	
 	<!-- Global Data -->
 	<cms:editable name='fullname' 						label='Full Name' 					    type='text'        group='group_data'   order='1' />
@@ -55,6 +58,7 @@
 	<cms:editable name='link_gplus'						label='Google+ Link' 	                type='text'     group='group_links'     order='2' />
 	<cms:editable name='link_upwork'					label='upWork Link'		                type='text'     group='group_links'     order='3' />
 	<cms:editable name='link_lnkdin'					label='LinkedIn Link' 	                type='text'     group='group_links'     order='4' />
+    <cms:editable name='link_github'					label='GitHub Link' 	                type='text'     group='group_links'     order='5' />
 
 </cms:template>
 <?php COUCH::invoke(); ?>

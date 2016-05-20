@@ -23,7 +23,7 @@
 	<link rel="author" href="<cms:get_custom_field 'link_gplus' masterpage='globals.php' />" />	
 	<cms:if k_template_name=='Home' >
 		<meta name="description" content="<cms:get_custom_field 'meta_description_home' masterpage='globals.php' />" />
-		<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_home' masterpage='globals.php' />" />
+		<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_home' masterpage='globals.php' />" 
 	<cms:else />
 		<cms:if k_template_name=='About' >
 			<meta name="description" content="<cms:get_custom_field 'meta_description_about' masterpage='globals.php' />" />
@@ -76,8 +76,6 @@
 	
 	<!-- Bootstrap Js -->
 	<script type="script/javascript" src="js/bootstrap.min.js"></script>
-	    
-	
 	
 	<!-- Useful Page JS -->
 	<script>
@@ -96,3 +94,22 @@
 		}
 	</script>
    
+   
+   	<cms:if k_template_name=='Home' >
+		<meta name="description" content="<cms:get_custom_field 'meta_description_home' masterpage='globals.php' />" />
+		<meta name="keywords" itemprop="<cms:get_custom_field 'keywords_home' masterpage='globals.php' />" 
+		
+		<!-- JS for the image slider on the Home Page -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">    
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript">        
+		  $(document).ready(function(){
+			$('.bxslider').bxSlider({   
+				minSlides: 3,
+				maxSlides: 3,
+				slideWidth: 250,
+				slideMargin: 10
+			});
+		  });
+		</script>
+	</cms:if>

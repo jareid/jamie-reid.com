@@ -10,20 +10,6 @@
 <html lang="en">
 <head>
     <cms:embed 'head.html' /> 
-
-    <!-- JS for the image slider on the Home Page -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">    
-    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-    <script type="text/javascript">        
-      $(document).ready(function(){
-        $('.bxslider').bxSlider({   
-            minSlides: 3,
-            maxSlides: 3,
-            slideWidth: 250,
-            slideMargin: 10
-        });
-      });
-    </script>
 </head>
 	<body>
 		<!-- main Wrapper start-->

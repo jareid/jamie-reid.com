@@ -145,6 +145,7 @@ section h1{
 	color: #ffffff;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 36px;
 }
 
 .personal-info{
@@ -552,7 +553,7 @@ footer p{
 	.jamiereid{height: 300px;}
 
 	.freelancer-info h1{font-size: 3em;}
-	.freelance-webdesigner{margin: 0px;}
+	.freelance-webdesigner{margin-bottom: 30px;}
 	.freelance-webdesigner h3{font-size: 1.3em; text-align: center;}
 	.project{margin-bottom: 20px;}
 

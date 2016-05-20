@@ -32,7 +32,9 @@
 			<!-- main wrapper ends -->
 
 			<!-- footer starts -->
-			<cms:embed 'addons/footer.html' />
+		      <footer>
+				<cms:embed 'addons/footer.html' />
+		      </footer>
 			<!-- footer ends -->
 			
 		<!-- Bootstrap Js -->

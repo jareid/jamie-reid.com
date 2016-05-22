@@ -51,12 +51,16 @@
               $(document).ready(function(){
                 $('.bxslider').bxSlider({   
                     auto: true,
-                    capations: true,
+                    captions: true,
                     pager: false,
-                    minSlides: 3,
+                    minSlides: 1,
                     maxSlides: 3,
                     slideWidth: 250,
-                    slideMargin: 10
+                    slideMargin: 10,
+                    mode: 'horizontal',
+                    speed: 500,
+                    slideMargin:20,
+                    infiniteLoop: true,
                 });
               });
             </script>

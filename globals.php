@@ -16,22 +16,22 @@
 	<cms:editable name='skype' 							label='Skype' 						    type='text'        group='group_data'   order='6' />
 	
 	<!-- Global SEO - Description -->		
-	<cms:editable name='meta_description_home' 			label='Index Meta Description'  		type='textarea'  group='group_seo'      order='1' desc='Used by search engines' required='1' height='75' />
-	<cms:editable name='meta_description_about' 		label='About Me Meta Description'   	type='textarea'  group='group_seo'      order='2' desc='Used by search engines' required='1' height='75' />
-	<cms:editable name='meta_description_services' 		label='Services Meta Description'   	type='textarea'  group='group_seo'      order='3' desc='Used by search engines' required='1' height='75' />
-	<cms:editable name='meta_description_testimonials' 	label='Testimonials Meta Description'   type='textarea'  group='group_seo'      order='4' desc='Used by search engines' required='1' height='75' />
-	<cms:editable name='meta_description_blog' 			label='Blog Meta Description'   		type='textarea'  group='group_seo'      order='5' desc='Used by search engines' required='1' height='75' />	
-	<cms:editable name='meta_description_contact' 		label='Contact Me Meta Description'   	type='textarea'  group='group_seo'      order='6' desc='Used by search engines' required='1' height='75' />
-	<cms:editable name='meta_description_404' 			label='Contact Me Meta Description'   	type='textarea'  group='group_seo'      order='7' desc='Used by search engines' required='1' height='75' />
+	<cms:editable name='meta_description_home' 			label='Index Meta Description'  		type='textarea'  group='group_seo'      order='1' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='meta_description_about' 		label='About Me Meta Description'   	type='textarea'  group='group_seo'      order='2' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='meta_description_services' 		label='Services Meta Description'   	type='textarea'  group='group_seo'      order='3' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='meta_description_testimonials' 	label='Testimonials Meta Description'   type='textarea'  group='group_seo'      order='4' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='meta_description_blog' 			label='Blog Meta Description'   		type='textarea'  group='group_seo'      order='5' desc='Used by search engines' required='1' height='40' maxlength='160' />	
+	<cms:editable name='meta_description_contact' 		label='Contact Me Meta Description'   	type='textarea'  group='group_seo'      order='6' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='meta_description_404' 			label='Contact Me Meta Description'   	type='textarea'  group='group_seo'      order='7' desc='Used by search engines' required='1' height='40' maxlength='160' />
 	
 	<!-- Global SEO - Description -->		
-	<cms:editable name='keywords_home' 					label='Index Keywords'   				type='textarea'  group='group_seo'      order='1' desc='Used by search engines' required='1' />
-	<cms:editable name='keywords_about' 				label='About Me Keywords'   			type='textarea'  group='group_seo'      order='2' desc='Used by search engines' required='1' />
-	<cms:editable name='keywords_services' 				label='Services Keywords'   			type='textarea'  group='group_seo'      order='3' desc='Used by search engines' required='1' />
-	<cms:editable name='keywords_testimonials' 			label='Testimonials Keywords'  			type='textarea'  group='group_seo'      order='4' desc='Used by search engines' required='1' />
-	<cms:editable name='keywords_blog'					label='Blog Keywords'   				type='textarea'  group='group_seo'      order='5' desc='Used by search engines' required='1' />	
-	<cms:editable name='keywords_contact'				label='Contact Me Keywords'   			type='textarea'  group='group_seo'      order='6' desc='Used by search engines' required='1' />
-	<cms:editable name='keywords_404' 					label='Contact Me Keywords'   			type='textarea'  group='group_seo'      order='7' desc='Used by search engines' required='1' />
+	<cms:editable name='keywords_home' 					label='Index Keywords'   				type='textarea'  group='group_seo'      order='1' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='keywords_about' 				label='About Me Keywords'   			type='textarea'  group='group_seo'      order='2' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='keywords_services' 				label='Services Keywords'   			type='textarea'  group='group_seo'      order='3' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='keywords_testimonials' 			label='Testimonials Keywords'  			type='textarea'  group='group_seo'      order='4' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='keywords_blog'					label='Blog Keywords'   				type='textarea'  group='group_seo'      order='5' desc='Used by search engines' required='1' height='40' maxlength='160' />	
+	<cms:editable name='keywords_contact'				label='Contact Me Keywords'   			type='textarea'  group='group_seo'      order='6' desc='Used by search engines' required='1' height='40' maxlength='160' />
+	<cms:editable name='keywords_404' 					label='Contact Me Keywords'   			type='textarea'  group='group_seo'      order='7' desc='Used by search engines' required='1' height='40' maxlength='160' />
 	
 	<!-- Global Miscellaneous -->	
 	<cms:editable name='maxyears' 						label='Maximum Year' 					type='text'      group='group_misc'     order='1' />

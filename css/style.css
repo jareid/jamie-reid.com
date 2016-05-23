@@ -52,6 +52,12 @@ section h1{
 .brandColor{color: #589DEA !important;}
 .brandSecColor{color: #7AAAE0 !important;}
 
+.company-images {
+    vertical-align: middle;
+    display: inline-block;
+    float: none !important;
+}
+
 /*========================
 	Profile Css
 =========================*/

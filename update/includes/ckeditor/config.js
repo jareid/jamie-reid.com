@@ -22,4 +22,6 @@ CKEDITOR.editorConfig = function( config )
         ev.editor.dataProcessor.writer.selfClosingEnd = '>';
     });
     */
+
+	extraPlugins = "codesnippet";
 };
